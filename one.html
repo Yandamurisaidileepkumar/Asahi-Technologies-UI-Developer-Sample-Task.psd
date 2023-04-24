@@ -1,0 +1,189 @@
+<! DOCTYPE html>  
+<html lang = "en">  
+<head>  
+  <meta charset = "UTF-8">  
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">  
+  <meta http-equiv = "X-UA-Compatible" content = "ie=edge">  
+  <title> How to add Space between two rows in a table using CSS? </title>  
+<style>  
+* {  
+  box-sizing: border-box;  
+  -webkit-box-sizing: border-box;  
+}  
+*:after {  
+  box-sizing: border-box;  
+  -webkit-box-sizing: border-box;  
+}  
+*:before {  
+  box-sizing: border-box;  
+  -webkit-box-sizing: border-box;  
+}  
+table {  
+                border-collapse: collapse;  
+                text-align: center;  
+            }  
+            th {  
+                background-color: blue;  
+                Color: white;  
+            }  
+            th {  
+                width: 150px;  
+                text-align: center;  
+                border: 1px solid black;  
+                padding: 5px;             
+            }  
+            td {  
+                width: 150px;  
+                text-align: center;  
+                border: 1px solid black;  
+                padding: 5px  
+              
+            }  
+            .gs {  
+                border-right: hidden;  
+            }  
+            .gg {  
+                border-collapse: separate;  
+                border-spacing: 0 15px;  
+            }  
+              
+html {  
+    font-size: 15px;  
+    font-family: sans-serif;  
+}  
+body {   
+  text-align: center;  
+  padding: 20px;  
+background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);  
+background-size: 1800% 1800%;  
+font-family: "Lucida Console", "Courier New", monospace;  
+-webkit-animation: rainbow 18s ease infinite;  
+-z-animation: rainbow 18s ease infinite;  
+-o-animation: rainbow 18s ease infinite;  
+  animation: rainbow 18s ease infinite; }  
+@-webkit-keyframes rainbow {  
+    0% { background-position: 0% 82% }  
+    50% { background-position: 100% 19% }  
+    100% { background-position: 0% 82% }  
+}  
+@-moz-keyframes rainbow {  
+        0% { background-position: 0% 82% }  
+    50% { background-position: 100% 19% }  
+    100% { background-position: 0% 82% }  
+}  
+@-o-keyframes rainbow {  
+    0% { background-position: 0% 82% }  
+    50% { background-position: 100% 19% }  
+    100% { background-position: 0% 82% }  
+}  
+@keyframes rainbow {   
+        0% { background-position: 0% 82% }  
+    50% { background-position: 100% 19% }  
+    100% { background-position: 0% 82% }  
+}  
+h2 {   
+text-align: center;   
+color: #46a294;   
+font-size: 28px;   
+width: 100%;  
+ margin: 10px 10;   
+position: relative;   
+line-height: 58px;   
+font-weight: 400;   
+}  
+h2:before {   
+content: " ";   
+position: absolute;   
+left: 50%;   
+bottom: 0;   
+width: 100px;   
+height: 2px;  
+font-weight: bold;  
+ background-color: #2079df;   
+margin-left: -50px;  
+ }  
+h1 {    
+  position: relative;    
+  padding: 0;    
+  margin: 0;    
+  font-family: "Raleway", sans-serif;    
+  font-weight: 200;    
+  font-size: 40px;    
+  color: red;    
+  -webkit-transition: all 0.4s ease 0s;    
+  -o-transition: all 0.4s ease 0s;    
+  transition: all 0.4s ease 0s;    
+}    
+caption {  
+  position: relative;    
+  padding: 0;    
+  margin: 0;    
+  font-family: "Raleway", sans-serif;    
+  font-weight: 100;    
+  font-size: 30px;    
+  color: red;    
+  -webkit-transition: all 0.4s ease 0s;    
+  -o-transition: all 0.4s ease 0s;    
+  transition: all 0.4s ease 0s;    
+}    
+</style>  
+<body>  
+<h1> Example </h1>  
+<h2> How to add Space between two rows in a table using CSS? <br>  <br>  </h2>  
+ <br> <br>  
+<table>  
+    <caption> Student Details <br> <br> <br> </caption>         
+    <tr>  
+                <th> Roll </th>  
+                <th> Name </th>  
+                <th> Class </th>  
+                <th> Gender </th>  
+                <th> Phone Number </th>  
+                <th> Age </th>  
+            </tr>  
+        </table>  
+        <table class = "gg">  
+            <tr>  
+                <td class = "gs"> 1 </td>  
+                <td> Thomas </td>  
+                <td> BA </td>  
+                <td> M </td>  
+                <td> 45589800878 </td>  
+                <td> 32 </td>  
+            </tr>  
+            <tr>  
+                <td class = "gs"> 2 </td>  
+                <td> Thomes </td>  
+                <td> BA </td>  
+                <td> M </td>  
+                <td> 45589800878 </td>  
+                <td> 32 </td>  
+            </tr>  
+            <tr>  
+                <td class = "gs"> 3 </td>  
+                <td> Thom </td>  
+                <td> BA </td>  
+                <td> M </td>  
+                <td> 45589800878 </td>  
+                <td> 32 </td>  
+            </tr>  
+            <tr>  
+            <td class = "gs"> 4 </td>  
+                <td> Arjun </td>  
+                <td> BA </td>  
+                <td> M </td>  
+                <td> 45589800878 </td>  
+                <td> 32 </td>  
+            </tr>  
+            <tr>  
+            <td class = "gs"> 5 </td>  
+                <td> Arjun </td>  
+                <td> BA </td>  
+                <td> M </td>  
+                <td> 45589800878 </td>  
+                <td> 32 </td>  
+            </tr>  
+        </table>  
+ 
+</body>  
+</html>
